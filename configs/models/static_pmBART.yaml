@@ -1,0 +1,8 @@
+model: static_pmBART
+params:
+  n_trees: 25
+  n_mcmc: 80
+  burn_in: 20
+  thin: 3
+  seed: 42
+  missing: native

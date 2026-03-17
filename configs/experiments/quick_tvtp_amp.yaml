@@ -1,0 +1,13 @@
+run_name: quick_tvtp_amp
+data_config: configs/data/default_data.yaml
+feature_registry: configs/data/feature_registry.yaml
+target:
+  column: crisis_any
+  mode: forecast
+  forecast_horizon: 6
+split:
+  train_end_year: 2010
+  val_years: 2
+models: [tvtp_amp]
+model_configs:
+  tvtp_amp: configs/models/tvtp_amp.yaml

@@ -1,0 +1,18 @@
+run_name: benchmark_forecast_12m
+data_config: configs/data/default_data.yaml
+feature_registry: configs/data/feature_registry.yaml
+target:
+  column: crisis_any
+  mode: forecast
+  forecast_horizon: 12
+split:
+  train_end_year: 2014
+  val_years: 4
+models: [logistic, probit, elastic_net_logit, random_forest, xgboost, monotone_xgboost]
+model_configs:
+  logistic: configs/models/logistic.yaml
+  probit: configs/models/probit.yaml
+  elastic_net_logit: configs/models/elastic_net_logit.yaml
+  random_forest: configs/models/random_forest.yaml
+  xgboost: configs/models/xgboost.yaml
+  monotone_xgboost: configs/models/monotone_xgboost.yaml

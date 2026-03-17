@@ -1,0 +1,5 @@
+model: logistic
+params:
+  random_state: 42
+  max_iter: 500
+  solver: lbfgs

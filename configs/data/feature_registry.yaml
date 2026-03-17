@@ -1,0 +1,31 @@
+features:
+  - name: credit_gap
+    category: fundamental
+    monotone: 1
+    transform: zscore
+    lags:
+      forecast: 1
+      nowcast: 0
+      scenario: 0
+    include: true
+    is_global: false
+  - name: fx_reserves
+    category: market
+    monotone: -1
+    transform: zscore
+    lags:
+      forecast: 1
+      nowcast: 0
+      scenario: 0
+    include: true
+    is_global: false
+  - name: vix_global
+    category: global
+    monotone: 1
+    transform: none
+    lags:
+      forecast: 0
+      nowcast: 0
+      scenario: 0
+    include: true
+    is_global: true
