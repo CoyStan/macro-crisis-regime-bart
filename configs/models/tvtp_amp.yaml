@@ -1,0 +1,16 @@
+model: tvtp_amp
+params:
+  n_trees: 20
+  missing: native
+  n0_warmup: 10
+  n1_warmup: 12
+  n_burn: 20
+  n_draws: 20
+  thin: 2
+  n_bart_sweeps_per_iter: 1
+  n_bart_sweeps_during_warmup: 2
+  eta_prior_mu: 0.0
+  eta_prior_sd: 0.5
+  tvtp_prior_sd: 1.5
+  pg_trunc: 80
+  seed: 42

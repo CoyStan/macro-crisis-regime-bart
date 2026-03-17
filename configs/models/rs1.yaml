@@ -1,0 +1,9 @@
+model: rs1
+params:
+  n_regimes: 2
+  n_trees: 20
+  n_mcmc: 100
+  burn_in: 30
+  thin: 3
+  seed: 42
+  missing: native

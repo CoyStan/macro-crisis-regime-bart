@@ -1,0 +1,11 @@
+model: rs2
+params:
+  n_regimes: 2
+  n_trees_baseline: 20
+  n_trees_deviation: 8
+  deviation_scale: 0.5
+  n_mcmc: 100
+  burn_in: 30
+  thin: 3
+  seed: 42
+  missing: native

@@ -1,0 +1,16 @@
+run_name: benchmark_nowcast
+data_config: configs/data/default_data.yaml
+feature_registry: configs/data/feature_registry.yaml
+target:
+  column: crisis_any
+  mode: nowcast
+  nowcast_window: 3
+split:
+  train_end_year: 2014
+  val_years: 4
+models: [logistic, probit, random_forest, xgboost]
+model_configs:
+  logistic: configs/models/logistic.yaml
+  probit: configs/models/probit.yaml
+  random_forest: configs/models/random_forest.yaml
+  xgboost: configs/models/xgboost.yaml

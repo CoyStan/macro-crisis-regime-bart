@@ -1,0 +1,2 @@
+run_name: rolling_cv_template
+notes: Use with rolling_origin_splits utility in custom scripts.

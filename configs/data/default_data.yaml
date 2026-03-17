@@ -1,0 +1,3 @@
+crisis_path: data/raw/crisis.csv
+feature_path: data/raw/features.csv
+key_columns: [country_id, year, month]
